@@ -1,14 +1,39 @@
 // Scanner class = C# stream reader
+import java.sql.SQLOutput;
 import java.util.Scanner;
+import java.util.stream.IntStream;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.print("Hey");
-        System.out.print(" There");
-        System.out.println("Hello World!");
+        ArrayList<String> cars = new ArrayList<String>();
 
-        System.out.println("This is a test");
+        cars.add("Volvo");
+
+        cars.add("BMW");
+
+        cars.add("Mazda");
+
+
+        System.out.println(cars);
+
+        System.out.println(cars.get(1));
+
+        cars.set(0, "Opel");
+
+        System.out.println(cars.get(0));
+
+        cars.remove(0);
+
+        System.out.println(cars.get(0));
+
+        System.out.println(cars.size());
+
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(String.format("%s is the best car", cars.get(i)));
+        }
+
 
 
     }
