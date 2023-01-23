@@ -21,7 +21,7 @@ import static java.util.stream.Collectors.toList;
 public class HourGlass {
 
 
-    // Create HourGlass function that takes in a list of integers
+    // Create HourGlass function that takes in a list of integer lists (of the 6 x 6 grid)
     public static void HourGlass(List<List<Integer>> arr) {
 
         // initialize max value
